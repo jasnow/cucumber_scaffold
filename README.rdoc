@@ -16,6 +16,15 @@ Then run the cucumber_scaffold generator with the same parameters:
   
   $ rails generate cucumber_scaffold:feature Post name:string body:text rating:integer published:boolean
 
+Possible command line options:
+  1. "--nifty"
+  2. "--tags"
+  3. "--line-numbers"
+  4. "--inline-source"
+  5. "--title"
+  6. "--main"
+  7. "Cucumber_scaffold"
+
 == Notes
 
 * By default the generated features are targeted at the Rails scaffold generator
@@ -197,3 +206,4 @@ Then run the cucumber_scaffold generator with the same parameters:
         When I go to the edit page for that post
         And I follow "Back"
         Then I should be on the posts page
+
