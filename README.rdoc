@@ -8,6 +8,8 @@ Install the support files (you should also do this when updating the gem):
 
   $ rails generate cucumber_scaffold:install
 
+Workaround: touch features/support/paths.rb -- to avoid thor error on next command.
+
 Run the built-in Rails scaffold generator:
 
   $ rails generate scaffold Post name:string body:text rating:integer published:boolean
